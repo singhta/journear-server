@@ -2,11 +2,11 @@
 URL - http://vast-retreat-87014.herokuapp.com/apidocs
 This is a Flask server deployed on Heroku maintaining all the communication of Journear-Neo App with the server
 API List
-# Register User
+## Register User
 Used to take details of the user ad save them on the POSTGRES SQL server
-# Login User
+## Login User
 Used to return login details of the user
-# Create Journey
+## Create Journey
 Used to take details of the journey and save on the database.
-# Get Journey
+## Get Journey
 Used to fetch journey details
