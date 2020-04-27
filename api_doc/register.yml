@@ -1,0 +1,40 @@
+API for registering user
+---
+tags:
+- register user
+parameters:
+- name: register
+  in: body
+  schema:
+    type: json
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+      name:
+        type: string
+      gender:
+        type: string
+      ratings:
+        type: integer
+      dob:
+        type: string
+
+responses:
+  500:
+    description: Internal Server Error.
+  200:
+    description: Registered Successfully
+    schema:
+      type: json
+      properties:
+        Message:
+          type: string
+        Status:
+          type: integer
+        id:
+          type: integer
+
+
+

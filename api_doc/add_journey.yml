@@ -1,0 +1,43 @@
+API for adding journey
+---
+tags:
+- add journey
+parameters:
+- name: add journey
+  in: body
+  schema:
+    type: json
+    properties:
+      source:
+        type: string
+      destination:
+        type: string
+      time:
+        type: string
+      user:
+        type: string
+      user_rating:
+        type: string
+      preferences:
+        type: object
+        properties:
+          gender:
+            type: string
+
+
+responses:
+  500:
+    description: Internal Server Error.
+  200:
+    description: Logged in Successfully
+    schema:
+      type: json
+      properties:
+        Message:
+          type: string
+        Status:
+          type: integer
+
+
+
+

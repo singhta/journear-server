@@ -1,0 +1,45 @@
+API for Logging in user
+---
+tags:
+- Log in user
+parameters:
+- name: Log in
+  in: body
+  schema:
+    type: json
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+
+responses:
+  500:
+    description: Internal Server Error.
+  200:
+    description: Logged in Successfully
+    schema:
+      type: json
+      properties:
+        Message:
+          type: string
+        Status:
+          type: integer
+        user:
+          type: object
+          properties:
+            dob:
+              type: string
+            gender:
+              type: string
+            id:
+              type: integer
+            name:
+              type: string
+            username:
+              type: string
+        key:
+          type: string
+
+
+
