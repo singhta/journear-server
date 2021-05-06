@@ -44,4 +44,4 @@ webassets==0.12.1
 Werkzeug==0.15.5
 WTForms==2.2.1
 flasgger == 0.9.1
-flask_cors == 3.0.4
+flask_cors == 3.0.9
